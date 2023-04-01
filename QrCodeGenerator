@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import qrcode
+
+link = input('enter link: ')
+name = input('enter name: ')
+
+img = qrcode.make(link)
+img.save(name)
+
+print("here your qrcode named %s which redirect to %s"%(name, link))
